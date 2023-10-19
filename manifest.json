@@ -1,0 +1,26 @@
+{
+    "name": "Early Running Extension",
+    "version": "1.0",
+    "manifest_version": 3,
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "interceptor.js"
+            ],
+            "matches": [
+                "<all_urls>"
+            ]
+        }
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "content-script.js"
+            ],
+            "run_at": "document_start"
+        }
+    ]
+}
